@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakso Sapi - Resep Masakan Indonesia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Memberi sedikit ruang antar langkah-langkah resep */
+        .recipe-steps li {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- ===== Bagian Navbar (Sama seperti halaman utama) ===== -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-orange-500">Resep Nusantara</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="text-gray-600 hover:text-orange-500 transition duration-300">Beranda</a>
+                <a href="#" class="text-gray-600 hover:text-orange-500 transition duration-300">Kategori</a>
+                <a href="#" class="text-gray-600 hover:text-orange-500 transition duration-300">Tentang</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden flex items-center">
+                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#" class="block py-2 text-gray-600 hover:text-orange-500">Beranda</a>
+            <a href="#" class="block py-2 text-gray-600 hover:text-orange-500">Kategori</a>
+            <a href="#" class="block py-2 text-gray-600 hover:text-orange-500">Tentang</a>
+        </div>
+    </nav>
+
+    <!-- ===== Konten Utama Halaman Resep ===== -->
+    <main class="container mx-auto px-6 py-12">
+        <article>
+            <!-- ===== Judul dan Gambar Utama Resep ===== -->
+            <header class="mb-8">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Bakso Sapi Kenyal</h1>
+                <p class="text-lg text-gray-600 max-w-3xl">Semangkuk kehangatan bakso sapi buatan sendiri yang kenyal dengan kuah kaldu gurih, disajikan lengkap dengan mi dan pelengkapnya.</p>
+                <div class="mt-6">
+                    <img src="../img/bakso.jpg" alt="Gambar Bakso Sapi" class="w-full h-auto object-cover rounded-lg shadow-lg">
+                </div>
+                 <!-- Info Singkat Resep -->
+                <div class="mt-8 flex flex-wrap gap-x-8 gap-y-4 text-gray-700">
+                    <div class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        <span><strong>Waktu:</strong> 2 Jam</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283-.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                         <span><strong>Porsi:</strong> 6-8 Orang</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                        <span><strong>Tingkat Kesulitan:</strong> Sedang</span>
+                    </div>
+                </div>
+            </header>
+
+            <hr class="my-8">
+
+            <!-- ===== Bagian Bahan dan Cara Membuat (Layout 2 Kolom) ===== -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
+                
+                <!-- Kolom Kiri: Bahan-bahan -->
+                <aside class="lg-col-span-1">
+                    <h2 class="text-2xl font-bold mb-4">Bahan-bahan</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="text-lg font-semibold text-orange-600">Bahan Bakso:</h3>
+                            <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                                <li>500 gr daging sapi giling tanpa lemak</li>
+                                <li>100 gr tepung tapioka/sagu</li>
+                                <li>1 butir putih telur</li>
+                                <li>4 siung bawang putih, haluskan</li>
+                                <li>2 sdm bawang merah goreng</li>
+                                <li>1 sdt garam</li>
+                                <li>1/2 sdt merica bubuk</li>
+                                <li>100 gr es batu, hancurkan</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-orange-600">Bahan Kuah:</h3>
+                            <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                                <li>2 liter air</li>
+                                <li>500 gr tulang sapi/iga</li>
+                                <li>5 siung bawang putih, haluskan</li>
+                                <li>1/2 sdt merica bubuk</li>
+                                <li>Garam, gula, kaldu bubuk secukupnya</li>
+                                <li>1 batang daun bawang, ikat simpul</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-orange-600">Pelengkap:</h3>
+                             <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                                <li>Mi kuning & bihun</li>
+                                <li>Sawi hijau/pokcoy, rebus</li>
+                                <li>Tauge</li>
+                                <li>Bawang goreng & irisan seledri</li>
+                                <li>Sambal, saus, kecap</li>
+                             </ul>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Kolom Kanan: Cara Membuat -->
+                <section class="lg-col-span-2">
+                    <h2 class="text-2xl font-bold mb-4">Cara Membuat</h2>
+                    <ol class="list-decimal list-inside space-y-4 text-gray-700 leading-relaxed recipe-steps">
+                        <li>
+                            <strong>Membuat Bakso:</strong> Masukkan daging giling, bawang putih, bawang merah goreng, garam, merica, dan putih telur ke dalam food processor. Giling hingga halus. Masukkan es batu sedikit demi sedikit, giling lagi. Terakhir masukkan tepung tapioka, giling hingga adonan kalis dan tercampur rata.
+                        </li>
+                        <li>
+                            <strong>Merebus Bakso:</strong> Didihkan air dalam panci. Matikan api. Bentuk adonan menjadi bulatan menggunakan tangan dan sendok. Masukkan bulatan bakso ke dalam air panas. Lakukan hingga adonan habis. Nyalakan kembali api kecil, masak hingga bakso mengapung. Angkat dan tiriskan.
+                        </li>
+                        <li>
+                            <strong>Membuat Kuah:</strong> Rebus tulang sapi hingga mendidih dan mengeluarkan kaldu. Di wajan terpisah, tumis bawang putih hingga harum, lalu masukkan ke dalam rebusan kaldu.
+                        </li>
+                        <li>
+                            <strong>Bumbui Kuah:</strong> Masukkan daun bawang, garam, gula, merica, dan kaldu bubuk ke dalam kuah. Masak dengan api kecil hingga bumbu meresap. Koreksi rasa.
+                        </li>
+                        <li>
+                            <strong>Siapkan Pelengkap:</strong> Rebus mi kuning, bihun, dan sawi secara terpisah. Tiriskan.
+                        </li>
+                        <li>
+                            <strong>Penyajian:</strong> Tata mi, bihun, sawi, dan tauge dalam mangkuk. Tambahkan beberapa butir bakso. Siram dengan kuah panas.
+                        </li>
+                        <li>
+                            <strong>Sentuhan Akhir:</strong> Taburi dengan bawang goreng dan irisan seledri. Sajikan bersama sambal, saus, dan kecap sesuai selera.
+                        </li>
+                    </ol>
+                </section>
+
+            </div>
+        </article>
+    </main>
+
+    <!-- ===== Bagian Footer (Sama seperti halaman utama) ===== -->
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="container mx-auto px-6 py-12">
+             <div class="bg-gray-900 py-4 -mx-6 -mb-12">
+                <p class="text-center text-gray-500">&copy; 2024 Resep Nusantara. Semua Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Script untuk Menu Mobile
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
