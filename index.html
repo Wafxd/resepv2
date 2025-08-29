@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,19 +14,23 @@
         body {
             font-family: 'Inter', sans-serif;
         }
+
         /* Custom styles for slider */
         .slider-container {
             position: relative;
             overflow: hidden;
         }
+
         .slider-wrapper {
             display: flex;
             transition: transform 0.5s ease-in-out;
         }
+
         .slider-item {
             min-width: 100%;
             box-sizing: border-box;
         }
+
         .slider-dots {
             position: absolute;
             bottom: 20px;
@@ -34,6 +39,7 @@
             display: flex;
             gap: 10px;
         }
+
         .slider-dot {
             width: 12px;
             height: 12px;
@@ -42,11 +48,13 @@
             cursor: pointer;
             transition: background-color 0.3s;
         }
+
         .slider-dot.active {
             background-color: white;
         }
     </style>
 </head>
+
 <body class="bg-gray-50 text-gray-800">
 
     <!-- ===== Bagian Navbar ===== -->
@@ -59,7 +67,11 @@
                 <a href="#" class="text-gray-600 hover:text-orange-500 transition duration-300">Tentang</a>
             </div>
             <button id="mobile-menu-button" class="md:hidden flex items-center">
-                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
             </button>
         </div>
         <!-- Menu Mobile -->
@@ -87,15 +99,24 @@
             </div>
         </div>
         <!-- Overlay Konten di atas Slider -->
-        <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white text-center p-4">
+        <div
+            class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white text-center p-4">
             <h1 class="text-4xl md:text-6xl font-bold mb-4">Temukan Resep Masakan Favoritmu</h1>
-            <p class="text-lg md:text-xl max-w-2xl mb-8">Jelajahi ribuan resep masakan asli Indonesia yang lezat dan mudah dibuat.</p>
+            <p class="text-lg md:text-xl max-w-2xl mb-8">Jelajahi ribuan resep masakan asli Indonesia yang lezat dan
+                mudah dibuat.</p>
             <!-- Formulir Pencarian -->
             <form id="search-form" class="w-full max-w-lg">
                 <div class="flex items-center bg-white rounded-full shadow-xl">
-                    <input id="search-input" class="rounded-l-full w-full py-4 px-6 text-gray-700 leading-tight focus:outline-none" type="text" placeholder="Cari resep, contoh: Sate Madura">
-                    <button type="submit" class="bg-orange-500 text-white rounded-r-full p-4 hover:bg-orange-600 transition">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    <input id="search-input"
+                        class="rounded-l-full w-full py-4 px-6 text-gray-700 leading-tight focus:outline-none"
+                        type="text" placeholder="Cari resep, contoh: Sate Madura">
+                    <button type="submit"
+                        class="bg-orange-500 text-white rounded-r-full p-4 hover:bg-orange-600 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
                     </button>
                 </div>
             </form>
@@ -104,13 +125,14 @@
     </header>
 
     <main class="container mx-auto px-6 py-12">
-        <!-- ===== Bagian Daftar Resep Populer ===== -->
+
         <section class="text-center mb-16">
             <h2 class="text-3xl font-bold mb-2">Resep Paling Populer</h2>
             <p class="text-gray-600 mb-8">Resep-resep yang paling banyak dicoba dan disukai.</p>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Resep Card 1: Sate Madura -->
-                <a href="pages/sate.html" class="block bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 group">
+                <a href="pages/sate.html"
+                    class="block bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 group">
                     <img src="img/sate.jpg" alt="Resep Sate Madura" class="w-full h-48 object-cover">
                     <div class="p-6 text-left">
                         <h3 class="text-xl font-semibold mb-2 group-hover:text-orange-600">Sate Madura</h3>
@@ -118,7 +140,8 @@
                     </div>
                 </a>
                 <!-- Resep Card 2: Rendang -->
-                <a href="pages/rendang.html" class="block bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 group">
+                <a href="pages/rendang.html"
+                    class="block bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 group">
                     <img src="img/rendang.jpg" alt="Resep Rendang Daging" class="w-full h-48 object-cover">
                     <div class="p-6 text-left">
                         <h3 class="text-xl font-semibold mb-2 group-hover:text-orange-600">Rendang Daging Sapi</h3>
@@ -126,7 +149,8 @@
                     </div>
                 </a>
                 <!-- Resep Card 3: Nasi Goreng -->
-                <a href="pages/nasgor.html" class="block bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 group">
+                <a href="pages/nasgor.html"
+                    class="block bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 group">
                     <img src="img/nasgor.jpg" alt="Resep Nasi Goreng" class="w-full h-48 object-cover">
                     <div class="p-6 text-left">
                         <h3 class="text-xl font-semibold mb-2 group-hover:text-orange-600">Nasi Goreng Spesial</h3>
@@ -136,25 +160,110 @@
             </div>
         </section>
 
+        <!-- ===== Bagian Daftar Resep Populer ===== -->
+
+        <section class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-2">Rumah Banop's Watchlist</h2>
+            <p class="text-gray-600 mb-8">Resep yang sering dimasak di Rumah Banop, atau yang ingin dimasak.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <a href="pages/nasi-goreng.html"
+                    class="block bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 group">
+                    <img src="img/nasgorbanop.jpg" alt="Resep Nasi Goreng Rumah Banop" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold mb-2 group-hover:text-orange-600">Nasi Goreng Rumah Banop</h3>
+                        <p class="text-gray-600">Menu andalan dengan sentuhan khas, cepat, praktis, dan pastinya lezat.
+                        </p>
+                    </div>
+                </a>
+
+                <a href="pages/terang-bulan.html"
+                    class="block bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 group">
+                    <img src="img/terbul.jpg" alt="Resep Terang Bulan" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold mb-2 group-hover:text-orange-600">Terang Bulan</h3>
+                        <p class="text-gray-600">Manis dan lembut dengan berbagai pilihan topping yang menggugah selera.
+                        </p>
+                    </div>
+                </a>
+
+                <a href="pages/mochi.html"
+                    class="block bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 group">
+                    <img src="img/moci.jpg" alt="Resep Mochi" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold mb-2 group-hover:text-orange-600">Mochi</h3>
+                        <p class="text-gray-600">Kenyal dan manis dengan isian yang lumer di mulut, camilan favorit
+                            semua.</p>
+                    </div>
+                </a>
+
+                <a href="pages/sotong.html"
+                    class="block bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 group">
+                    <img src="img/sotong.jpg" alt="Resep Sotong" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold mb-2 group-hover:text-orange-600">Sotong</h3>
+                        <p class="text-gray-600">Gurih dan renyah, hidangan laut yang selalu bikin ketagihan.</p>
+                    </div>
+                </a>
+
+                <a href="pages/seblak-rafael.html"
+                    class="block bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 group">
+                    <img src="img/rapael.jpg" alt="Resep Seblak Rafael" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold mb-2 group-hover:text-orange-600">Seblak Rafael</h3>
+                        <p class="text-gray-600">Sensasi pedas dan segar dari seblak coet yang viral dan mudah dibuat.
+                        </p>
+                    </div>
+                </a>
+
+                <a href="pages/donat.html"
+                    class="block bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 group">
+                    <img src="img/donat.jpg" alt="Resep Donat" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold mb-2 group-hover:text-orange-600">Donat</h3>
+                        <p class="text-gray-600">Empuk dan mengembang sempurna, klasik dengan taburan gula atau topping
+                            modern.</p>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="mt-12 text-center">
+                <a href="pages/all-recipe-banop.html"
+                    class="inline-block bg-orange-600 text-white font-bold py-5 px-8 rounded hover:bg-orange-700 transition duration-300">
+                    Lihat Resep Selengkapnya
+                </a>
+            </div>
+        </section>
+
         <!-- ===== Bagian Galeri Masakan ===== -->
         <section class="mb-16">
-             <h2 class="text-3xl font-bold text-center mb-8">Galeri Masakan</h2>
-             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Galeri Masakan</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="grid gap-4">
-                    <div><img class="w-full h-full object-cover rounded-lg shadow-md" src="img/rendang.jpg" alt="Galeri Rendang"></div>
-                    <div><img class="w-full h-full object-cover rounded-lg shadow-md" src="img/soto.jpg" alt="Galeri Soto"></div>
+                    <div><img class="w-full h-full object-cover rounded-lg shadow-md" src="img/rendang.jpg"
+                            alt="Galeri Rendang"></div>
+                    <div><img class="w-full h-full object-cover rounded-lg shadow-md" src="img/soto.jpg"
+                            alt="Galeri Soto"></div>
                 </div>
                 <div class="grid gap-4">
-                    <div><img class="w-full h-full object-cover rounded-lg shadow-md" src="img/gado.jpg" alt="Galeri Gado-Gado"></div>
-                    <div><img class="w-full h-full object-cover rounded-lg shadow-md" src="img/sate.jpg" alt="Galeri Sate"></div>
+                    <div><img class="w-full h-full object-cover rounded-lg shadow-md" src="img/gado.jpg"
+                            alt="Galeri Gado-Gado"></div>
+                    <div><img class="w-full h-full object-cover rounded-lg shadow-md" src="img/sate.jpg"
+                            alt="Galeri Sate"></div>
                 </div>
                 <div class="grid gap-4">
-                    <div><img class="w-full h-full object-cover rounded-lg shadow-md" src="img/bakso.jpg" alt="Galeri Bakso"></div>
-                    <div><img class="w-full h-full object-cover rounded-lg shadow-md" src="img/gudeg.jpg" alt="Galeri Gudeg"></div>
+                    <div><img class="w-full h-full object-cover rounded-lg shadow-md" src="img/bakso.jpg"
+                            alt="Galeri Bakso"></div>
+                    <div><img class="w-full h-full object-cover rounded-lg shadow-md" src="img/gudeg.jpg"
+                            alt="Galeri Gudeg"></div>
                 </div>
-                 <div class="grid gap-4">
-                    <div><img class="w-full h-full object-cover rounded-lg shadow-md" src="img/rawon.jpg" alt="Galeri Rawon"></div>
-                    <div><img class="w-full h-full object-cover rounded-lg shadow-md" src="img/pempek.jpg" alt="Galeri Pempek"></div>
+                <div class="grid gap-4">
+                    <div><img class="w-full h-full object-cover rounded-lg shadow-md" src="img/rawon.jpg"
+                            alt="Galeri Rawon"></div>
+                    <div><img class="w-full h-full object-cover rounded-lg shadow-md" src="img/pempek.jpg"
+                            alt="Galeri Pempek"></div>
                 </div>
             </div>
         </section>
@@ -164,10 +273,16 @@
             <h2 class="text-3xl font-bold text-center mb-8">Video Tutorial Memasak</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="rounded-lg overflow-hidden shadow-lg h-64 md:h-96">
-                    <iframe src="https://www.youtube.com/embed/videoseries?list=PL2z2vryi_fjfc-f8a9_d8gVMei_v-gL-G" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full"></iframe>
+                    <iframe src="https://www.youtube.com/embed/videoseries?list=PL2z2vryi_fjfc-f8a9_d8gVMei_v-gL-G"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen class="w-full h-full"></iframe>
                 </div>
                 <div class="rounded-lg overflow-hidden shadow-lg h-64 md:h-96">
-                    <iframe src="https://www.youtube.com/embed/videoseries?list=PL-R2E5lGt2vmf-b-I-g-u3wRml3_2y6aI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full"></iframe>
+                    <iframe src="https://www.youtube.com/embed/videoseries?list=PL-R2E5lGt2vmf-b-I-g-u3wRml3_2y6aI"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen class="w-full h-full"></iframe>
                 </div>
             </div>
         </section>
@@ -178,7 +293,8 @@
         <div class="container mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
                 <h3 class="text-xl font-bold mb-4 text-orange-400">Resep Nusantara</h3>
-                <p class="text-gray-400">Sumber inspirasi resep masakan asli dari berbagai daerah di Indonesia. Mudah, lezat, dan otentik.</p>
+                <p class="text-gray-400">Sumber inspirasi resep masakan asli dari berbagai daerah di Indonesia. Mudah,
+                    lezat, dan otentik.</p>
             </div>
             <div>
                 <h3 class="text-xl font-bold mb-4 text-orange-400">Link Cepat</h3>
@@ -209,7 +325,7 @@
         // Script untuk Pencarian Resep
         const searchForm = document.getElementById('search-form');
         const searchInput = document.getElementById('search-input');
-        
+
         // Daftar resep yang tersedia
         const recipeMap = {
             'sate': 'pages/sate.html',
@@ -222,7 +338,7 @@
         searchForm.addEventListener('submit', (event) => {
             event.preventDefault();
             const query = searchInput.value.toLowerCase().trim();
-            
+
             if (recipeMap[query]) {
                 window.location.href = recipeMap[query];
             } else {
@@ -248,7 +364,7 @@
                 });
                 dotsContainer.appendChild(dot);
             });
-            
+
             const dots = document.querySelectorAll('.slider-dot');
 
             function updateDots() {
@@ -273,4 +389,5 @@
         }
     </script>
 </body>
+
 </html>

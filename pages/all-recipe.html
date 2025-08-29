@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semua Resep - Resep Nusantara</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- ===== Bagian Navbar (Sama seperti halaman utama) ===== -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-orange-500">Resep Nusantara</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-600 hover:text-orange-500 transition duration-300">Beranda</a>
+                <a href="semua-resep.html" class="text-orange-500 font-semibold transition duration-300">Semua Resep</a>
+                <a href="#" class="text-gray-600 hover:text-orange-500 transition duration-300">Tentang</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden flex items-center">
+                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="index.html" class="block py-2 text-gray-600 hover:text-orange-500">Beranda</a>
+            <a href="semua-resep.html" class="block py-2 text-orange-500 font-semibold">Semua Resep</a>
+            <a href="#" class="block py-2 text-gray-600 hover:text-orange-500">Tentang</a>
+        </div>
+    </nav>
+
+    <!-- ===== Konten Utama Halaman Semua Resep ===== -->
+    <main class="container mx-auto px-6 py-12">
+        <header class="mb-10 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900">Semua Resep Masakan</h1>
+            <p class="text-lg text-gray-600 mt-2">Jelajahi semua koleksi resep masakan nusantara kami.</p>
+        </header>
+
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-16">
+            
+            <!-- Kolom Utama: Grid Semua Resep -->
+            <div class="lg:col-span-3">
+                <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-10">
+                    
+                    <!-- Card Resep: Bakso -->
+                    <a href="bakso.html" class="block bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 group">
+                        <img src="https://placehold.co/600x400/78716c/FFFFFF?text=Bakso" alt="Resep Bakso" class="w-full h-48 object-cover">
+                        <div class="p-6"><h3 class="text-xl font-semibold group-hover:text-orange-600">Bakso Sapi Kenyal</h3></div>
+                    </a>
+
+                    <!-- Card Resep: Gado-gado -->
+                    <a href="gado-gado.html" class="block bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 group">
+                        <img src="https://placehold.co/600x400/22c55e/FFFFFF?text=Gado-gado" alt="Resep Gado-gado" class="w-full h-48 object-cover">
+                        <div class="p-6"><h3 class="text-xl font-semibold group-hover:text-orange-600">Gado-gado</h3></div>
+                    </a>
+
+                    <!-- Card Resep: Gudeg -->
+                    <a href="gudeg.html" class="block bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 group">
+                        <img src="https://placehold.co/600x400/854d0e/FFFFFF?text=Gudeg" alt="Resep Gudeg" class="w-full h-48 object-cover">
+                        <div class="p-6"><h3 class="text-xl font-semibold group-hover:text-orange-600">Gudeg Yogyakarta</h3></div>
+                    </a>
+
+                    <!-- Card Resep: Nasi Goreng -->
+                    <a href="nasigoreng.html" class="block bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 group">
+                        <img src="https://placehold.co/600x400/d97706/FFFFFF?text=Nasi+Goreng" alt="Resep Nasi Goreng" class="w-full h-48 object-cover">
+                        <div class="p-6"><h3 class="text-xl font-semibold group-hover:text-orange-600">Nasi Goreng Spesial</h3></div>
+                    </a>
+
+                    <!-- Card Resep: Pempek -->
+                    <a href="pempek.html" class="block bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 group">
+                        <img src="https://placehold.co/600x400/404040/FFFFFF?text=Pempek" alt="Resep Pempek" class="w-full h-48 object-cover">
+                        <div class="p-6"><h3 class="text-xl font-semibold group-hover:text-orange-600">Pempek Palembang</h3></div>
+                    </a>
+
+                    <!-- Card Resep: Rawon -->
+                    <a href="rawon.html" class="block bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 group">
+                        <img src="https://placehold.co/600x400/262626/FFFFFF?text=Rawon" alt="Resep Rawon" class="w-full h-48 object-cover">
+                        <div class="p-6"><h3 class="text-xl font-semibold group-hover:text-orange-600">Rawon</h3></div>
+                    </a>
+
+                    <!-- Card Resep: Rendang -->
+                    <a href="rendang.html" class="block bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 group">
+                        <img src="https://placehold.co/600x400/ea580c/FFFFFF?text=Rendang" alt="Resep Rendang" class="w-full h-48 object-cover">
+                        <div class="p-6"><h3 class="text-xl font-semibold group-hover:text-orange-600">Rendang Daging Sapi</h3></div>
+                    </a>
+
+                    <!-- Card Resep: Sate -->
+                    <a href="sate.html" class="block bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 group">
+                        <img src="https://placehold.co/600x400/f97316/FFFFFF?text=Sate" alt="Resep Sate" class="w-full h-48 object-cover">
+                        <div class="p-6"><h3 class="text-xl font-semibold group-hover:text-orange-600">Sate Madura</h3></div>
+                    </a>
+
+                    <!-- Card Resep: Soto -->
+                    <a href="soto.html" class="block bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 group">
+                        <img src="https://placehold.co/600x400/facc15/FFFFFF?text=Soto" alt="Resep Soto" class="w-full h-48 object-cover">
+                        <div class="p-6"><h3 class="text-xl font-semibold group-hover:text-orange-600">Soto Ayam Lamongan</h3></div>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Kolom Samping: Resep Populer -->
+            <aside class="lg:col-span-1">
+                <div class="bg-white p-6 rounded-lg shadow-lg sticky top-28">
+                    <h2 class="text-2xl font-bold mb-6">Resep Populer</h2>
+                    <div class="space-y-6">
+                        
+                        <!-- Item Populer 1 -->
+                        <a href="rendang.html" class="flex items-center gap-4 group">
+                            <img src="https://placehold.co/100x100/ea580c/FFFFFF?text=Rendang" alt="Resep Rendang" class="w-20 h-20 object-cover rounded-md flex-shrink-0">
+                            <div><h4 class="font-semibold group-hover:text-orange-600">Rendang Daging Sapi</h4></div>
+                        </a>
+
+                        <!-- Item Populer 2 -->
+                        <a href="sate.html" class="flex items-center gap-4 group">
+                            <img src="https://placehold.co/100x100/f97316/FFFFFF?text=Sate" alt="Resep Sate" class="w-20 h-20 object-cover rounded-md flex-shrink-0">
+                            <div><h4 class="font-semibold group-hover:text-orange-600">Sate Madura</h4></div>
+                        </a>
+
+                        <!-- Item Populer 3 -->
+                        <a href="rawon.html" class="flex items-center gap-4 group">
+                            <img src="https://placehold.co/100x100/262626/FFFFFF?text=Rawon" alt="Resep Rawon" class="w-20 h-20 object-cover rounded-md flex-shrink-0">
+                            <div><h4 class="font-semibold group-hover:text-orange-600">Rawon</h4></div>
+                        </a>
+
+                         <!-- Item Populer 4 -->
+                        <a href="nasigoreng.html" class="flex items-center gap-4 group">
+                            <img src="https://placehold.co/100x100/d97706/FFFFFF?text=Nasi+Goreng" alt="Resep Nasi Goreng" class="w-20 h-20 object-cover rounded-md flex-shrink-0">
+                            <div><h4 class="font-semibold group-hover:text-orange-600">Nasi Goreng Spesial</h4></div>
+                        </a>
+
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- ===== Bagian Footer (Sama seperti halaman utama) ===== -->
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="container mx-auto px-6 py-12">
+             <div class="bg-gray-900 py-4 -mx-6 -mb-12">
+                <p class="text-center text-gray-500">&copy; 2024 Resep Nusantara. Semua Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Script untuk Menu Mobile
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
