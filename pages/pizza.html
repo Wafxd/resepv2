@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Pizza Teflon - Resep Masakan Indonesia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Memberi sedikit ruang antar langkah-langkah resep */
+        .recipe-steps li {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- ===== Bagian Navbar (Sama seperti halaman utama) ===== -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../" class="text-2xl font-bold text-orange-500">Resep Nusantara</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="../" class="text-gray-600 hover:text-orange-500 transition duration-300">Beranda</a>
+                <a href="all-recipe.html" class="text-gray-600 hover:text-orange-500 transition duration-300">Semua Resep</a>
+                <a href="all-recipe-banop.html" class="text-gray-600 hover:text-orange-500 transition duration-300">Resep Banop</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden flex items-center">
+                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="../" class="block py-2 text-gray-600 hover:text-orange-500">Beranda</a>
+            <a href="all-recipe.html" class="block py-2 text-orange-500 font-semibold">Semua Resep</a>
+            <a href="all-recipe-banop.html" class="block py-2 text-gray-600 hover:text-orange-500">Resep Banop</a>
+        </div>
+    </nav>
+
+    <!-- ===== Konten Utama Halaman Resep ===== -->
+    <main class="container mx-auto px-6 py-12">
+        <article>
+            <!-- ===== Judul dan Gambar Utama Resep ===== -->
+            <header class="mb-8">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Pizza Teflon Rumahan Anti Gagal</h1>
+                <p class="text-lg text-gray-600 max-w-3xl">Membuat pizza sendiri di rumah tidak perlu oven! Dengan resep ini, kamu bisa membuat pizza yang empuk dan lezat hanya dengan menggunakan teflon.</p>
+                <div class="mt-6">
+                    <img src="../img/pizza.jpg" alt="Gambar Pizza Teflon" class="w-full h-auto object-cover rounded-lg shadow-lg">
+                </div>
+                 <!-- Info Singkat Resep -->
+                <div class="mt-8 flex flex-wrap gap-x-8 gap-y-4 text-gray-700">
+                    <div class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        <span><strong>Waktu:</strong> 45 Menit</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283-.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                         <span><strong>Porsi:</strong> 1 Loyang</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                        <span><strong>Tingkat Kesulitan:</strong> Mudah</span>
+                    </div>
+                </div>
+            </header>
+
+            <hr class="my-8">
+
+            <!-- ===== Bagian Bahan dan Cara Membuat (Layout 2 Kolom) ===== -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
+                
+                <!-- Kolom Kiri: Bahan-bahan -->
+                <aside class="lg-col-span-1">
+                    <h2 class="text-2xl font-bold mb-4">Bahan-bahan</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="text-lg font-semibold text-orange-600">Bahan Roti (Dough):</h3>
+                            <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                                <li>200 gr tepung terigu protein sedang</li>
+                                <li>1 sdt ragi instan</li>
+                                <li>1 sdm gula pasir</li>
+                                <li>1/2 sdt garam</li>
+                                <li>150 ml air hangat</li>
+                                <li>2 sdm minyak goreng</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-orange-600">Bahan Topping (Sesuai Selera):</h3>
+                            <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                                <li>Saus tomat / saus bolognese</li>
+                                <li>Sosis, potong bulat</li>
+                                <li>Bawang bombay, iris</li>
+                                <li>Paprika, potong dadu</li>
+                                <li>Keju mozzarella / quick melt</li>
+                                <li>Oregano kering</li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Kolom Kanan: Cara Membuat -->
+                <section class="lg-col-span-2">
+                    <h2 class="text-2xl font-bold mb-4">Cara Membuat</h2>
+                    <ol class="list-decimal list-inside space-y-4 text-gray-700 leading-relaxed recipe-steps">
+                        <li>
+                            <strong>Aktivasi Ragi:</strong> Dalam gelas, campurkan air hangat, gula pasir, dan ragi instan. Aduk rata dan diamkan selama 5-10 menit hingga berbusa, tanda ragi aktif.
+                        </li>
+                        <li>
+                            <strong>Buat Adonan:</strong> Dalam wadah besar, campurkan tepung terigu dan garam. Buat lubang di tengah, tuang larutan ragi dan minyak goreng. Uleni adonan hingga kalis (sekitar 5-10 menit).
+                        </li>
+                        <li>
+                            <strong>Proofing:</strong> Bulatkan adonan, letakkan di wadah, dan tutup dengan kain bersih. Diamkan selama 30-45 menit hingga adonan mengembang dua kali lipat.
+                        </li>
+                        <li>
+                            <strong>Bentuk Adonan:</strong> Kempiskan adonan. Pindahkan ke teflon yang sudah diolesi sedikit minyak. Pipihkan adonan hingga rata menutupi dasar teflon.
+                        </li>
+                        <li>
+                            <strong>Tusuk & Beri Topping:</strong> Tusuk-tusuk permukaan adonan dengan garpu. Olesi dengan saus, lalu tata sosis, bawang bombay, paprika, dan taburi keju serta oregano di atasnya.
+                        </li>
+                        <li>
+                            <strong>Masak Pizza:</strong> Masak dengan api SANGAT KECIL dan tutup teflon. Masak selama 10-15 menit hingga bagian bawahnya kecoklatan dan keju meleleh sempurna.
+                        </li>
+                        <li>
+                            <strong>Sajikan:</strong> Angkat pizza dari teflon, potong-potong, dan sajikan selagi hangat.
+                        </li>
+                    </ol>
+                </section>
+
+            </div>
+        </article>
+    </main>
+
+    <!-- ===== Bagian Footer (Sama seperti halaman utama) ===== -->
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="container mx-auto px-6 py-12">
+             <div class="bg-gray-900 py-4 -mx-6 -mb-12">
+                <p class="text-center text-gray-500">&copy; 2024 Resep Nusantara. Semua Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Script untuk Menu Mobile
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
+
