@@ -101,7 +101,7 @@
             <p class="text-lg md:text-xl max-w-2xl mb-8">Jelajahi ribuan resep masakan asli Indonesia yang lezat dan
                 mudah dibuat.</p>
             <!-- Formulir Pencarian -->
-            <form id="search-form" class="w-full max-w-lg">
+            <!-- <form id="search-form" class="w-full max-w-lg">
                 <div class="flex items-center bg-white rounded-full shadow-xl">
                     <input id="search-input"
                         class="rounded-l-full w-full py-4 px-6 text-gray-700 leading-tight focus:outline-none"
@@ -115,12 +115,42 @@
                         </svg>
                     </button>
                 </div>
-            </form>
+            </form> -->
         </div>
         <div class="slider-dots"></div>
     </header>
 
     <main class="container mx-auto px-6 py-12">
+
+        <!-- ===== Bagian Tombol Kategori ===== -->
+        <section class="text-center mb-12">
+            <h2 class="text-3xl font-bold mb-2">Daftar List Resep</h2>
+            <p class="text-gray-600 mb-8">Resep-resep yang dimiliki.</p>
+            
+            <div class="grid grid-cols-1 mx-auto md:grid-cols-2 gap-20">
+                <!-- Card 1: Resep Banop -->
+                <a href="pages/all-recipe-banop.html" class="group block rounded-lg p-6 bg-cover bg-center relative overflow-hidden transform hover:scale-105 transition duration-300" style="background-image: url('img/terbul.jpg');">
+                     <div class="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-60 transition duration-300"></div>
+                     <div class="relative z-10 text-white text-center py-8">
+                        <h3 class="text-3xl font-bold">Resep Rumah Banop</h3>
+                        <p class="mt-2">Kumpulan resep yang sering dimasak atau ingin dimasak.</p>
+                     </div>
+                </a>
+                <!-- Card 2: Resep Nusantara -->
+                <a href="pages/all-recipe.html" class="group block rounded-lg p-6 bg-cover bg-center relative overflow-hidden transform hover:scale-105 transition duration-300" style="background-image: url('img/rendang.jpg');">
+                     <div class="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-60 transition duration-300"></div>
+                     <div class="relative z-10 text-white text-center py-8">
+                        <h3 class="text-3xl font-bold">Resep Nusantara</h3>
+                        <p class="mt-2">Jelajahi masakan otentik dari seluruh Indonesia.</p>
+                     </div>
+                </a>
+            </div>
+            
+        </section>
+
+        <section class="mb-8">
+            <hr >
+        </section>
 
         <section class="text-center mb-16">
             <h2 class="text-3xl font-bold mb-2">Resep Paling Populer</h2>
@@ -154,6 +184,12 @@
                     </div>
                 </a>
             </div>
+            <div class="mt-12 text-center">
+                <a href="pages/all-recipe.html"
+                    class="inline-block bg-orange-600 text-white font-bold py-5 px-8 rounded hover:bg-orange-700 transition duration-300">
+                    Lihat Semua Resep Nusantara
+                </a>
+            </div>
         </section>
 
         <!-- ===== Bagian Daftar Resep Populer ===== -->
@@ -164,7 +200,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                <a href="pages/nasi-goreng.html"
+                <a href="pages/nasgorinstan.html"
                     class="block bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 group">
                     <img src="img/nasgorbanop.jpg" alt="Resep Nasi Goreng Rumah Banop" class="w-full h-48 object-cover">
                     <div class="p-6 text-left">
@@ -184,7 +220,7 @@
                     </div>
                 </a>
 
-                <a href="pages/mochi.html"
+                <a href="pages/moci.html"
                     class="block bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 group">
                     <img src="img/moci.jpg" alt="Resep Mochi" class="w-full h-48 object-cover">
                     <div class="p-6 text-left">
@@ -228,7 +264,7 @@
             <div class="mt-12 text-center">
                 <a href="pages/all-recipe-banop.html"
                     class="inline-block bg-orange-600 text-white font-bold py-5 px-8 rounded hover:bg-orange-700 transition duration-300">
-                    Lihat Resep Selengkapnya
+                    Lihat Semua Resep Banop
                 </a>
             </div>
         </section>
